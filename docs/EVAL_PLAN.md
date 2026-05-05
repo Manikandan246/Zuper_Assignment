@@ -68,13 +68,13 @@ Most consumer voice products treat STT as a commodity. For us, it is not. Three 
 - For noise categories, mixed in post (the recorded clean voice + a separate noise track from a free SFX library at -10 to -15 dB relative to voice). The eval ships those mixes, not just the clean source, because the production system will see the mix.
 - Reference transcripts are written before the clips are recorded. The technician-reader is allowed (and encouraged) to make natural disfluencies — "uhs," restarts, mistakes — and the reference transcript captures what was actually said, not the script.
 
-The 10 pilot clips and reference transcripts are at [`eval/scripts/recording_scripts.md`](../eval/scripts/recording_scripts.md) and [`eval/scripts/references.json`](../eval/scripts/references.json). The eval runner is at [`eval/run.ts`](../eval/run.ts).
+The 10 pilot clips and reference transcripts are described at [`eval/scripts/recording_scripts.md`](https://github.com/Manikandan246/Zuper_Assignment/blob/main/eval/scripts/recording_scripts.md) with the canonical reference transcripts in [`eval/scripts/references.json`](https://github.com/Manikandan246/Zuper_Assignment/blob/main/eval/scripts/references.json). The eval runner is at [`eval/run.ts`](https://github.com/Manikandan246/Zuper_Assignment/blob/main/eval/run.ts).
 
 ## 5. Metrics: how each is measured
 
 ### 5a. Word Error Rate (WER)
 
-Standard Levenshtein-based: `(substitutions + deletions + insertions) / reference_length`. Implementation in [`eval/wer.ts`](../eval/wer.ts).
+Standard Levenshtein-based: `(substitutions + deletions + insertions) / reference_length`. Implementation in [`eval/wer.ts`](https://github.com/Manikandan246/Zuper_Assignment/blob/main/eval/wer.ts).
 
 Tokenization is intentionally aggressive: lowercase, strip punctuation, normalize spelled-out numbers ("fourteen" → "14"). This penalizes models for getting the *meaning* wrong, not for stylistic punctuation differences.
 
@@ -214,7 +214,7 @@ Eval was run on May 3, 2026 across 10 clips covering all 5 categories. Provider 
 - **Deepgram Nova-3** — REST `/v1/listen` with `keyterm` boosting on 17 roofing-domain terms. Smart-format, punctuation, English language hint.
 - **OpenAI Whisper-1** — REST `/v1/audio/transcriptions`, `verbose_json`, English language hint. No domain vocabulary boosting available.
 
-Full machine-readable results: [`eval/results/results.json`](../eval/results/results.json). Human-readable table: [`eval/results/results.md`](../eval/results/results.md).
+Full machine-readable results: [`eval/results/results.json`](https://github.com/Manikandan246/Zuper_Assignment/blob/main/eval/results/results.json). Human-readable table: [`eval/results/results.md`](https://github.com/Manikandan246/Zuper_Assignment/blob/main/eval/results/results.md).
 
 ### Aggregate
 

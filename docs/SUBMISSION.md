@@ -15,6 +15,18 @@ Designed against the worldview that the operator becomes the supervisor: AI does
 
 The full eval methodology, per-clip results, calibration check, and decision rubric are at [`/eval`](https://zuper-copilot-two.vercel.app/eval) and in the [eval plan](https://zuper-copilot-two.vercel.app/eval-plan).
 
+## Source
+
+Public repository: [github.com/Manikandan246/Zuper_Assignment](https://github.com/Manikandan246/Zuper_Assignment)
+
+Key implementation files:
+- [`lib/ai/prompt.ts`](https://github.com/Manikandan246/Zuper_Assignment/blob/main/lib/ai/prompt.ts) — system prompt, ten numbered operating principles
+- [`lib/ai/output-schema.ts`](https://github.com/Manikandan246/Zuper_Assignment/blob/main/lib/ai/output-schema.ts) — Zod + JSON Schema for the structured diagnostic
+- [`lib/db/schema.ts`](https://github.com/Manikandan246/Zuper_Assignment/blob/main/lib/db/schema.ts) — Drizzle schema (jobs, voice_notes, diagnostic_outputs versioned)
+- [`app/api/diagnose/route.ts`](https://github.com/Manikandan246/Zuper_Assignment/blob/main/app/api/diagnose/route.ts) — Claude tool-call endpoint with normalization
+- [`eval/run.ts`](https://github.com/Manikandan246/Zuper_Assignment/blob/main/eval/run.ts) — STT eval runner
+- [`eval/wer.ts`](https://github.com/Manikandan246/Zuper_Assignment/blob/main/eval/wer.ts) — Levenshtein WER and domain-term recall scorers
+
 ## Stack
 
 - Next.js 16 + React 19, TypeScript, Tailwind 4 (mobile-first responsive)

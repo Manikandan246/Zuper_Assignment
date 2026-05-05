@@ -14,7 +14,7 @@ One screen, three steps:
 2. **Voice in.** Push-to-talk, with a single large button. Audio is sent to Deepgram Nova-3 with a roofing-specific keyterm list. The transcript returns with per-word confidence; low-confidence words are visually flagged before any AI reasoning fires, so the technician sees what to verify.
 3. **Structured AI output, reviewable.** Claude Sonnet 4.6 produces a single JSON object containing observations, ranked hypotheses with counter-evidence, ordered next steps with safety notes, a parts list, a customer-facing sentence, and explicit lists of assumptions made and items the AI does not have enough confidence to decide alone. Every field is editable. The customer-facing copy is gated by a reviewer checkbox; the save action is disabled until the technician confirms. On approve, the output is saved as a versioned record tied to the voice note.
 
-The live demo is at [`/jobs/cedar-lane`](https://zuper-copilot-two.vercel.app/jobs/cedar-lane). Source for the AI surface is in [`lib/ai/`](../lib/ai), the structured-output schema is in [`lib/ai/output-schema.ts`](../lib/ai/output-schema.ts), the system prompt is in [`lib/ai/prompt.ts`](../lib/ai/prompt.ts).
+The live demo is at [`/jobs/cedar-lane`](https://zuper-copilot-two.vercel.app/jobs/cedar-lane). Source for the AI surface is in [`lib/ai/`](https://github.com/Manikandan246/Zuper_Assignment/tree/main/lib/ai), the structured-output schema is in [`lib/ai/output-schema.ts`](https://github.com/Manikandan246/Zuper_Assignment/blob/main/lib/ai/output-schema.ts), the system prompt is in [`lib/ai/prompt.ts`](https://github.com/Manikandan246/Zuper_Assignment/blob/main/lib/ai/prompt.ts).
 
 ## 3. The thesis: AI as workflow, not chat
 
@@ -37,7 +37,7 @@ So the design centerpiece is the **structured output schema**, not the chat inte
 
 ## 3.5. How the system prompt is structured
 
-The schema is the contract; the prompt is what gets the model to honor it. The full system prompt is at [`lib/ai/prompt.ts`](../lib/ai/prompt.ts). It is organized as ten numbered operating principles, in priority order:
+The schema is the contract; the prompt is what gets the model to honor it. The full system prompt is at [`lib/ai/prompt.ts`](https://github.com/Manikandan246/Zuper_Assignment/blob/main/lib/ai/prompt.ts). It is organized as ten numbered operating principles, in priority order:
 
 1. **Safety over speed.** Any recommendation made under unsafe conditions (high wind, slope, electrical hazard) must include an explicit `safety_note`.
 2. **Structured output only.** No prose, no markdown, no preamble. The entire response is one JSON object that conforms to the schema. Enforced via Claude's tool-call mode.
