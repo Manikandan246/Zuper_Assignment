@@ -1,0 +1,85 @@
+{
+  "clip01_clean_baseline": {
+    "label": "Clean baseline · indoor quiet",
+    "category": "baseline",
+    "reference": "Onsite at the Pereira job. I'm seeing lifted shingles near the ridge on the south slope. The bathroom vent boot has visible rust at the collar, looks like the prior caulk has cracked. No active dripping but the decking around the vent shows discoloration. Roof is fourteen years old, asphalt three-tab. Recommending we pull the vent boot and inspect underneath before deciding repair versus partial reroof."
+  },
+  "clip02_clean_terminology_dense": {
+    "label": "Roofing terminology dense · indoor quiet",
+    "category": "domain_vocab",
+    "reference": "Quick walk of the roof. Drip edge is fine. Step flashing along the chimney looks intact, but I'm noticing significant granule loss in the valley where it transitions to the ridge cap. Underlayment may be exposed. The ice and water shield on the eaves is past its service life. Soffit and fascia look okay from below but I'd want to check from the attic side."
+  },
+  "clip03_outdoor_with_traffic": {
+    "label": "Outdoor traffic noise",
+    "category": "field_noise",
+    "reference": "I'm on the back slope. Three damaged shingles directly above the bay window, looks like wind lift, not impact. The pipe boot here was replaced in the last visit, that one's holding fine. But the next vent over, the collar has separated from the flange. That's the most likely water entry point given the stain location below."
+  },
+  "clip04_outdoor_wind_or_fan": {
+    "label": "Wind/fan noise",
+    "category": "field_noise",
+    "reference": "Wind's picking up so I'm going to wrap this up. Ridge cap shingles are flapping on the east side. I count six that are loose. Two on the west. There's also a section of valley flashing that doesn't look properly sealed. Going to come down and finish the rest of the inspection from inside the attic."
+  },
+  "clip05_indian_english_natural": {
+    "label": "Indian English accent",
+    "category": "accent",
+    "reference": "Customer mentioned that the leak appears only after heavy rain, not during light rain or drizzle. That suggests the entry point is a small breach that only floods under high water volume. Could be the vent boot, could be the ridge vent gasket, could be a hairline crack in step flashing. I'm going to mark four areas to test with a hose."
+  },
+  "clip06_partial_interrupted": {
+    "label": "Partial / interrupted speech",
+    "category": "partial",
+    "reference": "Okay so I just got up here and the first thing I want to call out is hold on let me grab my okay. The first thing is the vent boot is definitely failing. The rubber collar has a tear about half an inch long. I don't know if I can patch it or if we need a full let me check the part number."
+  },
+  "clip07_quiet_but_proper_names": {
+    "label": "Proper names, addresses, dates",
+    "category": "names_numbers",
+    "reference": "Customer is Linda Pereira, address 4127 Cedar Lane, Worthington. Asset is a residential pitched roof, fourteen years old, asphalt three-tab. Prior visits by Carlos Mendez, dates September twelfth and December fourth, twenty twenty-five."
+  },
+  "clip08_quiet_homeowner_audible": {
+    "label": "Homeowner voice in background",
+    "category": "field_noise",
+    "reference": "So is the whole roof gonna need replacing? She's asking about full replacement. I'm not ready to commit to that. We've got localized failures around two penetrations and some lifted ridge cap. I'd say we have a real repair option here, but I want to inspect the attic side first before I tell her anything."
+  },
+  "clip09_short_command_style": {
+    "label": "Terse command-style speech",
+    "category": "domain_vocab",
+    "reference": "Vent boot. Failed. Two cracked shingles, ridge. One missing nail, drip edge. Need new pipe boot, color black, three-inch. Sealant. Schedule follow-up if leak continues after fix."
+  },
+  "clip10_long_narrative": {
+    "label": "Long narrative summary",
+    "category": "baseline",
+    "reference": "So summarizing the inspection: the recurring leak appears to be a combination of two failures, not one. The bathroom vent boot, which Carlos previously caulked, has now developed an actual material failure the rubber collar has cracked and torn. Caulking won't fix it; we need to replace the boot. Separately, the ridge cap on the north slope has six lifted shingles, likely due to wind events over the past winter. That ridge issue is a secondary water entry path and may have been contributing all along. Recommendation to the homeowner: replace the vent boot today if I have the part, address the ridge cap on a follow-up visit, monitor for one rain event before considering broader replacement. Roof is fourteen years old so we should also have the conversation about service life, but I don't want to push replacement when targeted repair is reasonable."
+  },
+  "_domain_terms": [
+    "ridge",
+    "ridge cap",
+    "ridge vent",
+    "vent boot",
+    "pipe boot",
+    "step flashing",
+    "valley flashing",
+    "drip edge",
+    "ice and water shield",
+    "decking",
+    "soffit",
+    "fascia",
+    "granule loss",
+    "underlayment",
+    "shingle",
+    "shingles",
+    "asphalt",
+    "three-tab",
+    "3-tab",
+    "flange",
+    "eaves",
+    "collar",
+    "caulk",
+    "reroof",
+    "attic",
+    "slope",
+    "chimney",
+    "Pereira",
+    "Mendez",
+    "Worthington",
+    "Cedar"
+  ]
+}

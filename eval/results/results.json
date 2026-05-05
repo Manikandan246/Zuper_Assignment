@@ -1,0 +1,577 @@
+{
+  "ts": "2026-05-03T15:39:42.104Z",
+  "results": [
+    {
+      "clipId": "clip01_clean_baseline",
+      "clipFile": "clip01_clean_baseline.m4a",
+      "category": "baseline",
+      "label": "Clean baseline · indoor quiet",
+      "reference": "Onsite at the Pereira job. I'm seeing lifted shingles near the ridge on the south slope. The bathroom vent boot has visible rust at the collar, looks like the prior caulk has cracked. No active dripping but the decking around the vent shows discoloration. Roof is fourteen years old, asphalt three-tab. Recommending we pull the vent boot and inspect underneath before deciding repair versus partial reroof.",
+      "durationSec": null,
+      "audioBytes": 938179,
+      "providers": {
+        "deepgram_nova3": {
+          "provider": "deepgram",
+          "model": "nova-3",
+          "transcript": "On-site at the Perera job, I'm seeing lifted shingles near the ridge on the South Slope. The bathroom vent boot has visible rust at the collar. Looks like the prior cock has cracked. No active dripping, but the decking around the vent shows discoloration. Roof is fourteen years old asphalt 3Tab recommending we pull the vent boot and inspect underneath before deciding repair versus partial reroof.",
+          "latencyMs": 3699,
+          "costUsd": 0.002186218541666667,
+          "wer": {
+            "wer": 0.06060606060606061,
+            "substitutions": 4,
+            "deletions": 0,
+            "insertions": 0,
+            "hits": 62,
+            "refLength": 66,
+            "hypLength": 66
+          },
+          "domainTermRecall": {
+            "found": 8,
+            "expected": 11,
+            "missed": [
+              "three-tab",
+              "caulk",
+              "Pereira"
+            ],
+            "recall": 0.7272727272727273
+          }
+        },
+        "openai_whisper": {
+          "provider": "openai",
+          "model": "whisper-1",
+          "transcript": "On site at the Pereira job, I am seeing lifted shingles near the ridge on the south slope. The bathroom vent boot has visible rust at the collar. Looks like the prior caulk has cracked. No active dripping but the decking around the vent shows discoloration. Roof is 14 years old, asphalt 3 tap. Recommending we pull the vent boot and inspect underneath before deciding repair vs partial re-roof.",
+          "latencyMs": 5055,
+          "costUsd": 0.003054000091552734,
+          "wer": {
+            "wer": 0.12121212121212122,
+            "substitutions": 5,
+            "deletions": 0,
+            "insertions": 3,
+            "hits": 61,
+            "refLength": 66,
+            "hypLength": 69
+          },
+          "domainTermRecall": {
+            "found": 9,
+            "expected": 11,
+            "missed": [
+              "three-tab",
+              "reroof"
+            ],
+            "recall": 0.8181818181818182
+          }
+        }
+      }
+    },
+    {
+      "clipId": "clip02_clean_terminology_dense",
+      "clipFile": "clip02_clean_terminology_dense.m4a",
+      "category": "domain_vocab",
+      "label": "Roofing terminology dense · indoor quiet",
+      "reference": "Quick walk of the roof. Drip edge is fine. Step flashing along the chimney looks intact, but I'm noticing significant granule loss in the valley where it transitions to the ridge cap. Underlayment may be exposed. The ice and water shield on the eaves is past its service life. Soffit and fascia look okay from below but I'd want to check from the attic side.",
+      "durationSec": null,
+      "audioBytes": 855336,
+      "providers": {
+        "deepgram_nova3": {
+          "provider": "deepgram",
+          "model": "nova-3",
+          "transcript": "Quick walk off the roof. Drip edge is fine. Step flashing along the chimney looks intact, but I'm noticing significant granule loss in the valley where it transitions to the ridge cap. And the layman may be exposed. The ice and water shield on the eaves is past its service life. Soffit and fascia look okay from below, but I would want to check from the attic side.",
+          "latencyMs": 3506,
+          "costUsd": 0.00198593264,
+          "wer": {
+            "wer": 0.09230769230769231,
+            "substitutions": 3,
+            "deletions": 0,
+            "insertions": 3,
+            "hits": 62,
+            "refLength": 65,
+            "hypLength": 68
+          },
+          "domainTermRecall": {
+            "found": 11,
+            "expected": 12,
+            "missed": [
+              "underlayment"
+            ],
+            "recall": 0.9166666666666666
+          }
+        },
+        "openai_whisper": {
+          "provider": "openai",
+          "model": "whisper-1",
+          "transcript": "Quick walk off the roof. Drip edge is fine. Steps flashing along the chimney looks intact but I am noticing significant granule loss in the valley where it transitions to the ridge cap. Underlayment may be exposed. The ice and water shield on the eaves is past its service life. Soffit and fascia look ok from below but I would want to check from the attic side.",
+          "latencyMs": 5240,
+          "costUsd": 0.002775,
+          "wer": {
+            "wer": 0.1076923076923077,
+            "substitutions": 5,
+            "deletions": 0,
+            "insertions": 2,
+            "hits": 60,
+            "refLength": 65,
+            "hypLength": 67
+          },
+          "domainTermRecall": {
+            "found": 11,
+            "expected": 12,
+            "missed": [
+              "step flashing"
+            ],
+            "recall": 0.9166666666666666
+          }
+        }
+      }
+    },
+    {
+      "clipId": "clip03_outdoor_with_traffic",
+      "clipFile": "clip03_outdoor_with_traffic.m4a",
+      "category": "field_noise",
+      "label": "Outdoor traffic noise",
+      "reference": "I'm on the back slope. Three damaged shingles directly above the bay window, looks like wind lift, not impact. The pipe boot here was replaced in the last visit, that one's holding fine. But the next vent over, the collar has separated from the flange. That's the most likely water entry point given the stain location below.",
+      "durationSec": null,
+      "audioBytes": 735709,
+      "providers": {
+        "deepgram_nova3": {
+          "provider": "deepgram",
+          "model": "nova-3",
+          "transcript": "I'm on the back slope, three damaged shingles directly above the bay window. Looks like a wind lift, not impact. The pipe boot here was replaced in the last visit. That one's holding fine. But the next vent over, the collar has separated from the flange. That's the most likely water entry point given the stain location below.",
+          "latencyMs": 10591,
+          "costUsd": 0.001709205208333333,
+          "wer": {
+            "wer": 0.017543859649122806,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 1,
+            "hits": 57,
+            "refLength": 57,
+            "hypLength": 58
+          },
+          "domainTermRecall": {
+            "found": 5,
+            "expected": 5,
+            "missed": [],
+            "recall": 1
+          }
+        },
+        "openai_whisper": {
+          "provider": "openai",
+          "model": "whisper-1",
+          "transcript": "I'm on the back slope, three damaged shingles directly above the bay window. Looks like wind lift, not impact. The pipe boot here was replaced in the last visit. That one's holding fine. The next went over, the collar has separated from the flange. That's the most likely water entry point given the strain location below.",
+          "latencyMs": 2384,
+          "costUsd": 0.002388999938964844,
+          "wer": {
+            "wer": 0.05263157894736842,
+            "substitutions": 2,
+            "deletions": 1,
+            "insertions": 0,
+            "hits": 54,
+            "refLength": 57,
+            "hypLength": 56
+          },
+          "domainTermRecall": {
+            "found": 5,
+            "expected": 5,
+            "missed": [],
+            "recall": 1
+          }
+        }
+      }
+    },
+    {
+      "clipId": "clip04_outdoor_wind_or_fan",
+      "clipFile": "clip04_outdoor_wind_or_fan.m4a",
+      "category": "field_noise",
+      "label": "Wind/fan noise",
+      "reference": "Wind's picking up so I'm going to wrap this up. Ridge cap shingles are flapping on the east side. I count six that are loose. Two on the west. There's also a section of valley flashing that doesn't look properly sealed. Going to come down and finish the rest of the inspection from inside the attic.",
+      "durationSec": null,
+      "audioBytes": 590985,
+      "providers": {
+        "deepgram_nova3": {
+          "provider": "deepgram",
+          "model": "nova-3",
+          "transcript": "Vent is picking up, so I'm going to wrap this up. Ridge cap shingles are flapping on the east side. I count six that are loose, two on the west. There's also a section of valley flashing that doesn't look properly sealed. Going to come down and finish the rest of the inspection from inside the attic.",
+          "latencyMs": 2869,
+          "costUsd": 0.001371319235,
+          "wer": {
+            "wer": 0.03571428571428571,
+            "substitutions": 1,
+            "deletions": 0,
+            "insertions": 1,
+            "hits": 55,
+            "refLength": 56,
+            "hypLength": 57
+          },
+          "domainTermRecall": {
+            "found": 5,
+            "expected": 5,
+            "missed": [],
+            "recall": 1
+          }
+        },
+        "openai_whisper": {
+          "provider": "openai",
+          "model": "whisper-1",
+          "transcript": "Wind is picking up so I am going to wrap this up. Ridge cap shingles are flapping on the east side. I count 6 that are loose, 2 on the west. There's also a section of valley flashing that doesn't look properly sealed. Going to come down and finish the rest of the inspection from inside the attic.",
+          "latencyMs": 4574,
+          "costUsd": 0.0019170000076293946,
+          "wer": {
+            "wer": 0.07142857142857142,
+            "substitutions": 2,
+            "deletions": 0,
+            "insertions": 2,
+            "hits": 54,
+            "refLength": 56,
+            "hypLength": 58
+          },
+          "domainTermRecall": {
+            "found": 5,
+            "expected": 5,
+            "missed": [],
+            "recall": 1
+          }
+        }
+      }
+    },
+    {
+      "clipId": "clip05_indian_english_natural",
+      "clipFile": "clip05_indian_english_natural.m4a",
+      "category": "accent",
+      "label": "Indian English accent",
+      "reference": "Customer mentioned that the leak appears only after heavy rain, not during light rain or drizzle. That suggests the entry point is a small breach that only floods under high water volume. Could be the vent boot, could be the ridge vent gasket, could be a hairline crack in step flashing. I'm going to mark four areas to test with a hose.",
+      "durationSec": null,
+      "audioBytes": 799561,
+      "providers": {
+        "deepgram_nova3": {
+          "provider": "deepgram",
+          "model": "nova-3",
+          "transcript": "Customer mentioned that the leak appears only after, heavy rain nor during light rain or rizzle. That suggests the entry point is a small breach that only floods under high water volume. Could be the vent boot, could be the ridge vent gasket, could be a hairline crack in step flashing. I'm going to mark four areas to test with the hose.",
+          "latencyMs": 3241,
+          "costUsd": 0.0018575059733333334,
+          "wer": {
+            "wer": 0.04838709677419355,
+            "substitutions": 3,
+            "deletions": 0,
+            "insertions": 0,
+            "hits": 59,
+            "refLength": 62,
+            "hypLength": 62
+          },
+          "domainTermRecall": {
+            "found": 4,
+            "expected": 4,
+            "missed": [],
+            "recall": 1
+          }
+        },
+        "openai_whisper": {
+          "provider": "openai",
+          "model": "whisper-1",
+          "transcript": "Customer mentioned that the leak appears only after heavy rain, not during light rain or drizzle. That suggests the entry point is a small breach that only floods under high water volume. Could be the vent boot, could be the rich vent gasket, could be a hairline crack in step flashing. I am going to mark 4 areas to test with the hose.",
+          "latencyMs": 3275,
+          "costUsd": 0.0025959999084472656,
+          "wer": {
+            "wer": 0.06451612903225806,
+            "substitutions": 3,
+            "deletions": 0,
+            "insertions": 1,
+            "hits": 59,
+            "refLength": 62,
+            "hypLength": 63
+          },
+          "domainTermRecall": {
+            "found": 2,
+            "expected": 4,
+            "missed": [
+              "ridge",
+              "ridge vent"
+            ],
+            "recall": 0.5
+          }
+        }
+      }
+    },
+    {
+      "clipId": "clip06_partial_interrupted",
+      "clipFile": "clip06_partial_interrupted.m4a",
+      "category": "partial",
+      "label": "Partial / interrupted speech",
+      "reference": "Okay so I just got up here and the first thing I want to call out is hold on let me grab my okay. The first thing is the vent boot is definitely failing. The rubber collar has a tear about half an inch long. I don't know if I can patch it or if we need a full let me check the part number.",
+      "durationSec": null,
+      "audioBytes": 934817,
+      "providers": {
+        "deepgram_nova3": {
+          "provider": "deepgram",
+          "model": "nova-3",
+          "transcript": "Okay. So I just got up here, and the first thing I want to call out is hold on. Let me grab my Okay. The first thing is the vent boot is definitely failing. The rubber collar has a tear about half an inch long. I don't know if I can patch it or if we need a full let me check the part number.",
+          "latencyMs": 3159,
+          "costUsd": 0.002177045208333333,
+          "wer": {
+            "wer": 0,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 0,
+            "hits": 65,
+            "refLength": 65,
+            "hypLength": 65
+          },
+          "domainTermRecall": {
+            "found": 2,
+            "expected": 2,
+            "missed": [],
+            "recall": 1
+          }
+        },
+        "openai_whisper": {
+          "provider": "openai",
+          "model": "whisper-1",
+          "transcript": "Okay, so I just got up here and the first thing I want to call out is, hold on and let me grab my, okay. The first thing is the vent boot is definitely failing. The rubber collar has a tear about half an inch long. I don't know if I can patch it or if we need a full. Let me check the part number.",
+          "latencyMs": 3874,
+          "costUsd": 0.0030420000076293945,
+          "wer": {
+            "wer": 0.015384615384615385,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 1,
+            "hits": 65,
+            "refLength": 65,
+            "hypLength": 66
+          },
+          "domainTermRecall": {
+            "found": 2,
+            "expected": 2,
+            "missed": [],
+            "recall": 1
+          }
+        }
+      }
+    },
+    {
+      "clipId": "clip07_quiet_but_proper_names",
+      "clipFile": "clip07_quiet_but_proper_names.m4a",
+      "category": "names_numbers",
+      "label": "Proper names, addresses, dates",
+      "reference": "Customer is Linda Pereira, address 4127 Cedar Lane, Worthington. Asset is a residential pitched roof, fourteen years old, asphalt three-tab. Prior visits by Carlos Mendez, dates September twelfth and December fourth, twenty twenty-five.",
+      "durationSec": null,
+      "audioBytes": 665687,
+      "providers": {
+        "deepgram_nova3": {
+          "provider": "deepgram",
+          "model": "nova-3",
+          "transcript": "Customer is Linda Pereira. Address, 4127 Cedar Lane, Worthington. Asset is a residential pitched roof, fourteen years old, asphalt 3Tab. Prior visits by Carlos Mendez, dates September 12 and 12/04/2025.",
+          "latencyMs": 11244,
+          "costUsd": 0.0015486718750000001,
+          "wer": {
+            "wer": 0.18181818181818182,
+            "substitutions": 5,
+            "deletions": 1,
+            "insertions": 0,
+            "hits": 27,
+            "refLength": 33,
+            "hypLength": 32
+          },
+          "domainTermRecall": {
+            "found": 5,
+            "expected": 6,
+            "missed": [
+              "three-tab"
+            ],
+            "recall": 0.8333333333333334
+          }
+        },
+        "openai_whisper": {
+          "provider": "openai",
+          "model": "whisper-1",
+          "transcript": "Customer is Linda Pereira, address 4127 Cedar Lane, Worthington. Asset is a residential pitched roof, 14 years old, asphalt 3-tab. Prior visits by Carlos Mendez, date September 12th and December 4th, 2025.",
+          "latencyMs": 2428,
+          "costUsd": 0.0021649999618530277,
+          "wer": {
+            "wer": 0.18181818181818182,
+            "substitutions": 5,
+            "deletions": 1,
+            "insertions": 0,
+            "hits": 27,
+            "refLength": 33,
+            "hypLength": 32
+          },
+          "domainTermRecall": {
+            "found": 5,
+            "expected": 6,
+            "missed": [
+              "three-tab"
+            ],
+            "recall": 0.8333333333333334
+          }
+        }
+      }
+    },
+    {
+      "clipId": "clip08_quiet_homeowner_audible",
+      "clipFile": "clip08_quiet_homeowner_audible.m4a",
+      "category": "field_noise",
+      "label": "Homeowner voice in background",
+      "reference": "So is the whole roof gonna need replacing? She's asking about full replacement. I'm not ready to commit to that. We've got localized failures around two penetrations and some lifted ridge cap. I'd say we have a real repair option here, but I want to inspect the attic side first before I tell her anything.",
+      "durationSec": null,
+      "audioBytes": 1101303,
+      "providers": {
+        "deepgram_nova3": {
+          "provider": "deepgram",
+          "model": "nova-3",
+          "transcript": "Hey. So is the whole roof gonna need replacing? He's asking about full replacement. I'm not ready to commit to that. We have got localized failures around two penetrations and some lifted ridge cap. I would say we have a real repair option here, but I want to inspect the attic side first before I tell him anything.",
+          "latencyMs": 4812,
+          "costUsd": 0.00257149847,
+          "wer": {
+            "wer": 0.12727272727272726,
+            "substitutions": 4,
+            "deletions": 0,
+            "insertions": 3,
+            "hits": 51,
+            "refLength": 55,
+            "hypLength": 58
+          },
+          "domainTermRecall": {
+            "found": 3,
+            "expected": 3,
+            "missed": [],
+            "recall": 1
+          }
+        },
+        "openai_whisper": {
+          "provider": "openai",
+          "model": "whisper-1",
+          "transcript": "Hey, so is the whole roof gonna need replacing? He's asking about full replacement, I am not ready to commit to that, we have got localized failures around 2 penetrations and some lifted ridge cap, I would say we have a real repair option here, but I want to inspect the attic side first before I tell him anything.",
+          "latencyMs": 3987,
+          "costUsd": 0.0035919998168945314,
+          "wer": {
+            "wer": 0.16363636363636364,
+            "substitutions": 5,
+            "deletions": 0,
+            "insertions": 4,
+            "hits": 50,
+            "refLength": 55,
+            "hypLength": 59
+          },
+          "domainTermRecall": {
+            "found": 3,
+            "expected": 3,
+            "missed": [],
+            "recall": 1
+          }
+        }
+      }
+    },
+    {
+      "clipId": "clip09_short_command_style",
+      "clipFile": "clip09_short_command_style.m4a",
+      "category": "domain_vocab",
+      "label": "Terse command-style speech",
+      "reference": "Vent boot. Failed. Two cracked shingles, ridge. One missing nail, drip edge. Need new pipe boot, color black, three-inch. Sealant. Schedule follow-up if leak continues after fix.",
+      "durationSec": null,
+      "audioBytes": 609471,
+      "providers": {
+        "deepgram_nova3": {
+          "provider": "deepgram",
+          "model": "nova-3",
+          "transcript": "Vent boot failed to crack shingles rich one missing nail drip edge need new pipe boot, color black three inch sealant, schedule follow-up if leak continues after fix.",
+          "latencyMs": 1594,
+          "costUsd": 0.001420245208333333,
+          "wer": {
+            "wer": 0.18518518518518517,
+            "substitutions": 4,
+            "deletions": 0,
+            "insertions": 1,
+            "hits": 23,
+            "refLength": 27,
+            "hypLength": 28
+          },
+          "domainTermRecall": {
+            "found": 4,
+            "expected": 5,
+            "missed": [
+              "ridge"
+            ],
+            "recall": 0.8
+          }
+        },
+        "openai_whisper": {
+          "provider": "openai",
+          "model": "whisper-1",
+          "transcript": "vent boot failed to crack shingles rich one missing nail drip edge need new pipe boot color black 3-inch sealant schedule follow-up if leak continues after fix",
+          "latencyMs": 4071,
+          "costUsd": 0.0019860000610351564,
+          "wer": {
+            "wer": 0.14814814814814814,
+            "substitutions": 4,
+            "deletions": 0,
+            "insertions": 0,
+            "hits": 23,
+            "refLength": 27,
+            "hypLength": 27
+          },
+          "domainTermRecall": {
+            "found": 4,
+            "expected": 5,
+            "missed": [
+              "ridge"
+            ],
+            "recall": 0.8
+          }
+        }
+      }
+    },
+    {
+      "clipId": "clip10_long_narrative",
+      "clipFile": "clip10_long_narrative.m4a",
+      "category": "baseline",
+      "label": "Long narrative summary",
+      "reference": "So summarizing the inspection: the recurring leak appears to be a combination of two failures, not one. The bathroom vent boot, which Carlos previously caulked, has now developed an actual material failure the rubber collar has cracked and torn. Caulking won't fix it; we need to replace the boot. Separately, the ridge cap on the north slope has six lifted shingles, likely due to wind events over the past winter. That ridge issue is a secondary water entry path and may have been contributing all along. Recommendation to the homeowner: replace the vent boot today if I have the part, address the ridge cap on a follow-up visit, monitor for one rain event before considering broader replacement. Roof is fourteen years old so we should also have the conversation about service life, but I don't want to push replacement when targeted repair is reasonable.",
+      "durationSec": null,
+      "audioBytes": 1961409,
+      "providers": {
+        "deepgram_nova3": {
+          "provider": "deepgram",
+          "model": "nova-3",
+          "transcript": "So summarizing the inspection, the recurring leak appears to be a combination of two failures and not one. The bathroom vent boot, which carolers previously cocked, has now developed an actual material failure. The rubber collar has cracked and torn. Cocking won't fix it. We need to replace the boot. Separately, the ridge cap on the North Slope has six lifted shingles likely due to wind events over the past winter. That ridge issue is a secondary water entry path and may have been contributing all along. Recommendation to the homeowner replace the vent boot today if I have the part, address the ridge cap on a follow-up visit, monitor for one rain event before considering broader replacement. Roof is fourteen years old so we should also have the conversation about service life but I don't want to push replacement when targeted repair is reasonable.",
+          "latencyMs": 12905,
+          "costUsd": 0.004572812496666667,
+          "wer": {
+            "wer": 0.027777777777777776,
+            "substitutions": 3,
+            "deletions": 0,
+            "insertions": 1,
+            "hits": 141,
+            "refLength": 144,
+            "hypLength": 145
+          },
+          "domainTermRecall": {
+            "found": 6,
+            "expected": 6,
+            "missed": [],
+            "recall": 1
+          }
+        },
+        "openai_whisper": {
+          "provider": "openai",
+          "model": "whisper-1",
+          "transcript": "So, summarising the inspection, the recurring leak appears to be a combination of two failures and not one. The bathroom vent boot, which carlers previously caulked, has now developed an actual material failure. The rubber collar has cracked and torn. Caulking won't fix it, we need to replace the boot. Separately, the ridge cap on the north slope has six lifted shingles, likely due to wind events over the past winter. That ridge issue is a secondary water entry path and may have been contributing all along. Recommendation to the homeowner, replace the vent boot today if I have the part. Address the ridge cap on a follow-up visit. Monitor for one rain event before considering broader replacement. Roof is 14 years old, so we should also have the conversation about service life, but I don't want to push replacement when targeted repair is reasonable.",
+          "latencyMs": 9332,
+          "costUsd": 0.006384000015258789,
+          "wer": {
+            "wer": 0.020833333333333332,
+            "substitutions": 2,
+            "deletions": 0,
+            "insertions": 1,
+            "hits": 142,
+            "refLength": 144,
+            "hypLength": 145
+          },
+          "domainTermRecall": {
+            "found": 6,
+            "expected": 6,
+            "missed": [],
+            "recall": 1
+          }
+        }
+      }
+    }
+  ]
+}

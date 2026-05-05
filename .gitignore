@@ -36,6 +36,9 @@ yarn-error.log*
 # vercel
 .vercel
 
+# eval audio clips — voice recordings, excluded from the public repo
+eval/clips/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
