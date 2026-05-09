@@ -39,6 +39,13 @@ yarn-error.log*
 # eval audio clips — voice recordings, excluded from the public repo
 eval/clips/
 
+# Personal interview prep — not for the public repo
+docs/INTERVIEW_PREP.md
+docs/INTERVIEW_PREP.html
+docs/INTERVIEW_PREP.pdf
+scripts/build-prep-pdf.mjs
+docs/LOOM_SCRIPT.md
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
